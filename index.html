@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.com. Spend less. Smile more.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #eaeded;
+        }
+        .nav1{
+            font-family: 'Poppins', sans-serif;
+            background-color: #122030;
+            color: #ffffff;
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .nav1 img{
+            height: 30px;
+            width: 95px;
+        }
+        .nav1 p{
+            display: inline-block;
+            line-height: 1em;
+        }
+        .delivery{
+            font-size: 13px;
+            color: #d6d6d6;
+            letter-spacing: .06em;
+        }
+        .pin{
+            color: #ffffff;
+            font-size: 22px;
+        }
+        .searchContainer{
+            width: 600px;
+            display: flex;
+            height: 40px;
+        }
+        .nav1 select{
+            font-size: 13px;
+            padding: 12px 0 12px 12px;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+            border: none;
+            background-color: #f3f3f3;
+        }
+        .nav1 input{
+            outline: none;
+            border: none;
+            width: 100%;
+            border-left: 1px solid #000000;
+        }
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #febd69;
+            width: 50px;
+            color: #000000;
+            padding: 5px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            font-size: 28px;
+        }
+        .lng p{
+            display: flex;
+        }
+        .lng p img{
+            width: 25px;
+            height: 15px;
+        }
+        .sign_in{
+            font-size: 13px;
+        }
+        .sign_in p{
+            display: flex;
+        }
+        .return{
+            font-size: 13px;
+            line-height: .2em;
+        }
+        .cart{
+            font-size: 16px;
+            color: #ffffff;
+        }
+        .cart p{
+            display: flex;
+            align-items: center;
+        }
+        .cart ion-icon{
+            font-size: 25px;
+        }
+        .nav2{
+            font-family: 'Poppins', sans-serif;
+            background-color: #2b3b4a;
+            color: #ffffff;
+            height: 40px;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav2 a{
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .deals{
+            margin-right: 20px;
+        }
+        .allLeft{
+            margin-left: 20px;
+        }
+        .allLeft ion-icon{
+            font-size: 25px;
+        }
+        .allLeft{
+            display: flex;
+            align-items: center;
+        }
+        input{
+            padding: 5px;
+        }
+        .content{
+            font-family: 'Poppins', sans-serif;
+            background-image: linear-gradient(to top, #eaeded 30%, transparent, transparent, transparent), url(./images/bg.jpg);
+            background-size: 100% 550px;
+            background-repeat: no-repeat;
+            max-width: 1455px;
+            margin: 0 auto;
+            padding-top: 250px;
+        }
+        .contentBox{
+            display: inline-block;
+            height: 400px;
+            width: 300px;
+            background-color: #ffffff;
+            margin: 10px;
+            padding: 10px;
+        }
+        .card-container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        h2{
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+        .item{
+            height: 280px;
+            width: 100%;
+            cursor: pointer;
+        }
+        .contentBox a{
+            font-size: 13px;
+            font-style: normal;
+            display: inline-block;
+            text-decoration: none;
+            color: #007185;
+            margin-top: 18px;
+        }
+        .contentBox a:hover{
+            color: #f0880f;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        footer{
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.2em;
+            background-color: #232F3E;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav1">
+            <img src="logo.png" alt="logo">
+            <div>
+                <ion-icon name="pin" class="pin"></ion-icon>
+                <p><span class="delivery">deliver to</span><br><b>Pakistan</b></p>
+            </div>
+            <div class="searchContainer">
+                <select name="select">
+                    <option value="All">All</option>
+                   <ion-icon name="arrow-dropdown"></ion-icon>
+                </select>
+                <input type="search" placeholder="Search Amazon">
+                <button><ion-icon name="search"></ion-icon></button>
+            </div>
+          <div class="lng"><p><img src="./images/us.svg"><b>EN</b><ion-icon class="downArrow" name="arrow-dropdown"></ion-icon></p></div> 
+            <p><span class="sign_in">Hello, sign in</span><br><b>Account & Lists</b><ion-icon class="downArrow" name="arrow-dropdown"></ion-icon></p>
+            <p><span class="return">Returns</span><br><b>& Orders</b></p>
+           <div class="cart"><p><br><ion-icon name="cart"></ion-icon><b>Cart</b></p></div> 
+        </nav>
+        <nav class="nav2">
+            <!-- <a href="#" class="logo">Amazon</a> -->
+            <div class="allLeft">
+                <ion-icon name="menu"></ion-icon>
+                <a class="all" href="#"><b>All</b></a>
+                <a href="#">Today's Deals</a>
+                <a href="#">Customer Service</a>
+                <a href="#">Registry</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Sell</a>
+            </div>
+            <div class="deals">
+                <a href="#"><b>Shop great deals now</b></a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="content">
+        <div class="card-container">
+        <div class="contentBox">
+            <h2>
+                Gaming Accessories
+            </h2>
+            <img src="https://cdn.vox-cdn.com/thumbor/fRxHQWtU1_rwnKROP-ILx3sJGeU=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22222438/otterbox_gaming_clip_mobile.jpg" alt="gaming" class="item">
+            <a href="#">
+                Show more
+            </a>
+        </div>
+        <div class="contentBox">
+            <h2>
+                Clothing
+            </h2>
+            <img src="https://sc04.alicdn.com/kf/Ha8ae0e5013e3444dbe7111094a98f218w.jpg" alt="clothing" class="item">
+            <a href="#">
+                See all details
+            </a>
+        </div>
+        <div class="contentBox">
+            <h2>
+                Kitchen Items
+            </h2>
+            <img src="https://images-cdn.ubuy.co.in/633ff138bda068028f60f00b-zulay-23-piece-nylon-kitchen-utensils.jpg" alt="kitchen items" class="item">
+            <a href="#">
+                Shop now
+            </a>
+        </div>
+        <div class="contentBox">
+            <h2>
+                Decoration
+            </h2>
+            <img src="https://i.etsystatic.com/6031984/r/il/d5bbee/4154078921/il_fullxfull.4154078921_t93z.jpg" alt="decoration" class="item">
+            <a href="#">
+                Discover more
+            </a>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="contentBox">
+            <h2>
+                Gadgets
+            </h2>
+            <img src="https://www.rentnconnect.com/ckfinder/userfiles/files/Best%20Tech%20Gadgets%202020.jpg" alt="gadgets" class="item">
+            <a href="#">
+                Show more
+            </a>
+        </div>
+        <div class="contentBox">
+            <h2>
+                Childrens Toys
+            </h2>
+            <img src="https://i5.walmartimages.com/asr/f8edded4-8d29-44a8-9455-fa0cbb43a4d1_1.66fe399d0a73eb41497f34dd8223c565.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff" alt="toys" class="item">
+            <a href="#">
+                See all details
+            </a>
+        </div>
+        <div class="contentBox">
+            <h2>
+                Fashion
+            </h2>
+            <img src="https://i.pinimg.com/736x/a8/7d/42/a87d423721a3b7a01ff27f9d48530bc1.jpg" alt="fashion" class="item">
+            <a href="#">
+                Shop now
+            </a>
+        </div>
+        <div class="contentBox">
+            <h2>
+                Fitness Items
+            </h2>
+            <img src="https://advancefitness.pk/wp-content/uploads/2019/12/Home-gyms-and-benches-cat-img.png" alt="gym" class="item">
+            <a href="#">
+                Discover more
+            </a>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="contentBox">
+            <h2>
+                Watches
+            </h2>
+            <img src="https://m.media-amazon.com/images/I/519WTMjVBjL._SL500_.jpg" alt="watch" class="item">
+            <a href="#">
+                Show more
+            </a>
+        </div>
+        <div class="contentBox">
+            <h2>
+                Plantations
+            </h2>
+            <img src="https://adriaworkshop.com/storage/decorating-with-houseplant-monstera-1.jpg" alt="plants" class="item">
+            <a href="#">
+                See all details
+            </a>
+        </div>
+        <div class="contentBox">
+            <h2>
+                Music
+            </h2>
+            <img src="https://oneclickshopping.pk/wp-content/uploads/2022/03/Untitled-1_1-190.jpg" alt="music" class="item">
+            <a href="#">
+                Shop now
+            </a>
+        </div>
+        <div class="contentBox">
+            <h2>
+                Lightings
+            </h2>
+            <img src="https://m.media-amazon.com/images/I/81QZuZ6DlaL._AC_UF1000,1000_QL80_.jpg" alt="lighting" class="item">
+            <a href="#">
+                Discover more
+            </a>
+        </div>
+    </div>
+    </div>
+    <footer>
+        Made with &hearts; by Amazon <br>
+        &copy; 1996-2022, Amazon.com, Inc. or its affiliates
+    </footer>
+</body>
+</html>
